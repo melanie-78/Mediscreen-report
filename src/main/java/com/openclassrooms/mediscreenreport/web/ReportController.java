@@ -22,9 +22,4 @@ public class ReportController {
         return assessmentById;
     }
 
-    @GetMapping("/assess/{patFirstName}")
-    public Report getAssessmentByFamilyName(@PathVariable String patFirstName){
-        return reportService.getAssessmentByFamilyName(patFirstName);
-    }
-
 }

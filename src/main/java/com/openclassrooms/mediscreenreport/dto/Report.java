@@ -1,10 +1,12 @@
 package com.openclassrooms.mediscreenreport.dto;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
 
 @Data
+@NoArgsConstructor
 public class Report {
     @NotBlank(message="patFirstName is mandatory")
     private String patFirstName;

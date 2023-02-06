@@ -9,7 +9,4 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface MicroservicePatientsProxy {
     @GetMapping(value = "/patient/{id}")
     PatientBean getPatient(@PathVariable("id") Integer id);
-
-    @GetMapping(value = "/patient/{firstName}")
-    PatientBean getPatient(@PathVariable("firstName") String firstName);
 }
