@@ -98,6 +98,12 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.5</version>
+				<configuration>
+					<excludes>
+						<exclude>/com/openclassrooms/mediscreenreport/dto/*</exclude>
+						<exclude>/com/openclassrooms/mediscreenreport/beans/*</exclude>
+					</excludes>
+				</configuration>
 				<executions>
 					<execution>
 						<goals>
